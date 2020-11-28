@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Expense App</title>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">Expense App</h1>
+      <p class="text-center">Add New Expense:</p>
+      <form id="myForm">
+        <div class="form-group">
+          <label>Name:</label>
+          <input id="name" class="form-control" type="text" autocomplete="off"/>
+        </div>
+        <div class="form-group">
+          <label>Date:</label>
+          <input id="date" class="form-control" type="date" autocomplete="off"/>
+        </div>
+        <div class="form-group">
+          <label>Amount:</label>
+          <input id="amount" class="form-control" type="number" autocomplete="off"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Add Expense</button>
+      </form>
+      <table id="myTable" class="table table-striped mt-3">
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
